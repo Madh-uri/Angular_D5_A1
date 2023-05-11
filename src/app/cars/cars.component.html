@@ -1,0 +1,10 @@
+<h1>cars works!</h1>
+
+<div [hidden]="hide" *ngFor = "let car of getCars()">
+    <h3>{{car.name}}</h3>
+    <h3>{{car.model}}</h3>
+    <h3>{{car.year}}</h3>
+</div>
+<br>
+<br>
+<button (click)="toggle()">Toggle Me</button>
